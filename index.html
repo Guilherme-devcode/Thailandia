@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="shortcut icon" type="imagex/png" href="img/icone.ico">
+    <script src="https://kit.fontawesome.com/a6c6b5b88d.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <title>Thailândia</title>
+</head>
+
+<body>
+    <section id="sec" class="ban">
+        <header>
+            <a href="#" class="logo">Voyage</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div id="fundo"></div>
+        <video src="img/video.mp4" muted autoplay loop type="mp4"></video>
+        <div class="textBox">
+            <h2>Tailândia</h2>
+            <p>Uma viagem à Tailândia é um convite aos sentidos. Considerado um dos países mais exóticos do Sudeste
+                Asiático, encanta por sua beleza natural, suas pequenas aldeias, comunidades culturais, seus suntuosos
+                templos de ouro e sua tão apreciada gastronomia.</p>
+            <a class="btn" href="#"> <span>Ler mais</span></a>
+        </div>
+        <div class="videoBx">
+            <video src="img/video.mp4" muted autoplay loop type="mp4"></video>
+        </div>
+
+        <div class="about">
+            <div class="textabout">
+                <h2>Sobre a Tailândia</h2>
+                <p>A <span>Tailândia</span> é um país bastante grande, com uma boa parte de seu território em meio ao
+                    continente, fazendo fronteira com Camboja, Myanmar e Laos. Mas a parte sul de seu território é uma
+                    grande <span>Península</span> (uma faixa de terra cercada por água), com fronteira com a Malásia.
+                    Nessa região mais ao sul é que se encontram suas melhores <span>praias</span> e uma parte
+                    considerável do movimento <span>turístico</span>. Embora haja <span>praias</span> quietas,
+                    reservadas e até menos populares, os destinos comuns são as luxuosas, amplas e bastante vivas! Estas
+                    possuem uma infraestrutura <span>maravilhosa</span>, sempre prontas para receber turistas.</p>
+            </div>
+            <img src="img/bandeira.jpg" alt="">
+            <a class="btn" href="#"> <span>Sobre as praias</span></a>
+        </div>
+
+        <div class="hotel">
+
+            <div class="card-section">
+                <h1>HOTÉIS</h1>
+                <h4>Veja alguns dos hotéis na Tailândia</h4>
+                <div class="card-list">
+                  <div class="card">
+                    <img src="img/namaka.jpeg"/>
+                    <span>Namaka Hotel</span>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <a class="btn" href="#"><p>Ver hotél</p></a>
+                  </div>
+                  <div class="card">
+                    <img src="img/Onsen At Monchan.jpg"/>
+                    <span id="Onsen">Onsen At Monchan</span>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <a class="btn" href="#"><p>Ver hotél</p></a>
+                  </div>
+                  <div class="card">
+                    <img src="img/alana.jpeg"/>
+                    <span id="alana">Aleenta Phuket</span>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <a class="btn" href="#"><p>Ver hotél</p></a>
+                  </div>
+                  <div class="card">
+                    <img src="img/marina.jpg"/>
+                    <span id="marina">Marina</span>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <a class="btn" href="#"><p>Ver hotél</p></a>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="pagination">
+                <ul> <!--pages or li are comes from javascript --> </ul>
+              </div>
+              <div class="contato">
+                <div class="section" data-anchor="contact">
+                    <div class="content wow fadeInDown" data-wow-delay="0.2s">
+                      <h1>CONTATO</h1>
+                      <div class="contact-form">
+              
+                        <div id="form-messages"></div>
+                        <form id="ajax-contact" method="post" role="form" action="contact.php" data-toggle="validator">
+                          <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="0.6s">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Nome" data-error="Field can't be blank!" required>
+                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                            <div class="help-block with-errors"></div>
+                          </div>
+              
+                          <div class="form-group has-feedback wow fadeInRight" data-wow-delay="0.8s">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" data-error="Field can't be blank!" required>
+                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                            <div class="help-block with-errors"></div>
+                          </div>
+              
+                          <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="1s">
+                            <textarea data-minlength="10" class="form-control" id="message" name="message" placeholder="Mensagem" data-error="Minimum of 10 characters" required></textarea>
+                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                            <div class="help-block with-errors"></div>
+                          </div>
+            
+                          <div class="wow fadeInUp" data-wow-delay="1s">
+                            <button type="submit" id="submit" name="submit" class="btn btn-lg">ENVIAR MENSAGEM</button>
+                          </div>
+                        </form>
+                        <br>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+        <div class="footer">
+            <footer class="footer-distributed">
+
+                <div class="footer-right">
+                    <a href="https://www.instagram.com/guilherme.doc/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://twitter.com/Zecadofutibas"><i class="fa fa-twitter"></i></a>
+                    <a href="https://github.com/Guilherme-devcode"><i class="fa fa-github"></i></a>
+                </div>
+                <div class="footer-left">
+                    <p>Guilherme-devcode &copy; 2021</p>
+                </div>
+            </footer>
+        </div>
+        
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Hotéis</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+    <script>
+const element = document.querySelector(".pagination ul");
+let totalPages = 20;
+let page = 10;
+element.innerHTML = createPagination(totalPages, page);
+function createPagination(totalPages, page){
+  let liTag = '';
+  let active;
+  let beforePage = page - 1;
+  let afterPage = page + 1;
+  if(page > 1){ 
+    liTag += `<li class="btn prev" onclick="createPagination(totalPages, ${page - 1})"><span><i class="fas fa-angle-left"></i>Voltar</span></li>`;
+  }
+  if(page > 2){ 
+    liTag += `<li class="first numb" onclick="createPagination(totalPages, 1)"><span>1</span></li>`;
+    if(page > 3){ 
+      liTag += `<li class="dots"><span>...</span></li>`;
+    }
+  }
+ 
+  if (page == totalPages) {
+    beforePage = beforePage - 2;
+  } else if (page == totalPages - 1) {
+    beforePage = beforePage - 1;
+  }
+ 
+  if (page == 1) {
+    afterPage = afterPage + 2;
+  } else if (page == 2) {
+    afterPage  = afterPage + 1;
+  }
+  for (var plength = beforePage; plength <= afterPage; plength++) {
+    if (plength > totalPages) { 
+      continue;
+    }
+    if (plength == 0) {
+      plength = plength + 1;
+    }
+    if(page == plength){ 
+      active = "active";
+    }else{ 
+      active = "";
+    }
+    liTag += `<li class="numb ${active}" onclick="createPagination(totalPages, ${plength})"><span>${plength}</span></li>`;
+  }
+  if(page < totalPages - 1){ 
+    if(page < totalPages - 2){ 
+      liTag += `<li class="dots"><span>...</span></li>`;
+    }
+    liTag += `<li class="last numb" onclick="createPagination(totalPages, ${totalPages})"><span>${totalPages}</span></li>`;
+  }
+  if (page < totalPages) { 
+    liTag += `<li class="btn next" onclick="createPagination(totalPages, ${page + 1})"><span>Próx <i class="fas fa-angle-right"></i></span></li>`;
+  }
+  element.innerHTML = liTag; 
+  return liTag; 
+}
+    </script>
+</body>
+
+</html>
